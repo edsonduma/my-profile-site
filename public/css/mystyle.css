@@ -1,0 +1,81 @@
+/* *{padding:0;margin:0;} */
+
+/* body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#CCC;
+} */
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    /* bottom:350px; */
+    top: 500px;
+    right: 40px;
+    background-color: #60A9F0;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 14px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    background: white;
+    box-shadow: 2px 2px 3px #999;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #000;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 18px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgb(73, 122, 255);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #return-to-top {
+        bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #return-to-top {
+        bottom: 280px;
+    }
+}

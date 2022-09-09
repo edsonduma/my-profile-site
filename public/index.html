@@ -16,6 +16,7 @@ http://www.templatemo.com/tm-467-easy-profile
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-blue.css">
+	<link rel="stylesheet" href="css/mystyle.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -132,25 +133,20 @@ http://www.templatemo.com/tm-467-easy-profile
 						</a>
 					</p>
 					<p><i class="fa fa-phone"></i> (+244)
-						<!-- 923 439 514; 993 439 514 -->
 						<a href="tel:+244923439514">923 439 514</a>;
 						<a href="tel:+244993439514">993 439 514</a>
 					</p>
-					<p><i class="fa fa-envelope"></i> 
-						<!-- edsonbernardo03@gmail.com
-						mailto -->
+					<p><i class="fa fa-envelope"></i>
 						<a href="mailto:edsonbernardo03@gmail.com"> edsonbernardo03@gmail.com</a>
-						<!-- Just like the phone link, you can use the visual portion to add a message, such as: -->
-						<!-- <a href="mailto: edsonbernardo03@gmail.com"> edsonbernardo03@gmail.com</a> -->
 					</p>
 					<p><i class="fa fa-cloud"></i>
 						<a href="https://github.com/edsonduma" target="_blank"> www.github.com/edsonduma</a>
 					</p>
 					<p><i class="fa fa-globe"></i>
-						<a href="https://ao.linkedin.com/in/edson-duma" target="_blank"> ao.linkedin.com/in/edson-duma</a>
+						<a href="https://ao.linkedin.com/in/edson-duma" target="_blank">
+							ao.linkedin.com/in/edson-duma</a>
 					</p>
-					<!-- <p><i class="fa fa-file-pdf-o"></i> -->
-					<p><i class="fa fa-download"></i>
+					<p><i class="fa fa-file-pdf-o"></i>
 						<a href="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf">Baixar Curriculum Vitae PDF</a>
 					</p>
 				</div>
@@ -200,23 +196,49 @@ http://www.templatemo.com/tm-467-easy-profile
 						<li><a href="https://ao.linkedin.com/in/edson-duma" class="fa fa-linkedin" target="_blank"></a>
 						</li>
 						<li><a href="https://github.com/edsonduma" class="fa fa-github" target="_blank"></a></li>
-						<!-- <li><a href="#" class="fa fa-"></a></li> -->
-						<!-- <li><a href="#" class="fa fa-behance"></a></li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<!-- <a style="padding:10px;display:block;" href="" target="_blank">Click here for complete tutorial</a> -->
+
+	<!-- Code begins here -->
+
+	<a href="/public/assets/NewCV_EdsonDuma_PT_Agosto22.pdf" class="float" target="_blank">
+		<i class="fa fa-download my-float"></i>
+		<p>CV</p>
+	</a>
+	<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  -->
+
+	<!-- <div style="height:2000px; text-align: center">
+		<h3>Scroll down</h3>
+		<i class="icon-arrow-down"></i>
+	</div> -->
+	<!-- Return to Top -->
+	<!-- <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a> -->
+	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 	<!-- javascript js -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.backstretch.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/myscript.js"></script>
 	<script>
-		const currentYear = new Date().getFullYear()
-		document.getElementById("current-year").innerHTML = new Date().getFullYear()
-		document.getElementById("for-year").innerHTML = (currentYear - 2016)
+		// ===== Scroll to Top ==== 
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+				$('#return-to-top').fadeIn(200);    // Fade in the arrow
+			} else {
+				$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+			}
+		});
+		$('#return-to-top').click(function () {      // When arrow is clicked
+			$('body,html').animate({
+				scrollTop: 0                       // Scroll to top of body
+			}, 500);
+		});
 	</script>
 </body>
 
