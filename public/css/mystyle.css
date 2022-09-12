@@ -2,8 +2,8 @@
     position: fixed;
     width: 60px;
     height: 60px;
-    /* bottom:350px; */
-    top: 500px;
+    bottom: 90px;
+    /* top: 500px; */
     right: 40px;
     background-color: #60A9F0;
     color: #FFF;
@@ -18,7 +18,7 @@
 
 #return-to-top {
     position: fixed;
-    bottom: 60px;
+    bottom: 20px;
     right: 40px;
     background: white;
     box-shadow: 2px 2px 3px #999;
@@ -61,7 +61,13 @@
 }
 
 @media screen and (max-width: 576px) {
+    .float {
+        /* bottom:350px; */
+        right: 10px;
+    }
+    
     #return-to-top {
-        bottom: 280px;
+        /* bottom: 280px; */
+        right: 10px;
     }
 }
