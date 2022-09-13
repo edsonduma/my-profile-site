@@ -104,6 +104,16 @@ http://www.templatemo.com/tm-467-easy-profile
 						<p class="education-description">Aprendeu sobre informática em nivel
 							avançado e aprofundou a programação, o desenvolvimento e arquitetura de software.</p>
 					</div>
+					<div class="education-content">
+						<h4 class="education-title accent">Concluido</h4>
+						<h4 class="education-title accent">Médio Tecnico de Informática</h4>
+						<div class="education-school">
+							<h5>Colégio Jacimar</h5><span></span>
+							<h5>2009 - 2011</h5>
+						</div>
+						<p class="education-description">Aprendeu sobre informática em nivel
+							intermédio e aprofundou com destaque as redes de computadores e infra-estruturas.</p>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
@@ -127,6 +137,13 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="col-md-4 col-sm-12">
 				<div class="contact">
 					<h2>Contactos</h2>
+					<p><i class="fa fa-linkedin"></i>
+						<a href="https://ao.linkedin.com/in/edson-duma" target="_blank">
+							ao.linkedin.com/in/edson-duma</a>
+					</p>
+					<p><i class="fa fa-github"></i>
+						<a href="https://github.com/edsonduma" target="_blank"> www.github.com/edsonduma</a>
+					</p>
 					<p><i class="fa fa-map-marker"></i>
 						<a href="https://goo.gl/maps/9f766BZoXUgsNLoU6" target="_blank">
 							Kilamba Kiaxi, Luanda
@@ -134,20 +151,15 @@ http://www.templatemo.com/tm-467-easy-profile
 					</p>
 					<p><i class="fa fa-phone"></i> (+244)
 						<a href="tel:+244923439514">923 439 514</a>;
+					</p>
+					<p><i class="fa fa-phone"></i> (+244)
 						<a href="tel:+244993439514">993 439 514</a>
 					</p>
 					<p><i class="fa fa-envelope"></i>
 						<a href="mailto:edsonbernardo03@gmail.com"> edsonbernardo03@gmail.com</a>
 					</p>
-					<p><i class="fa fa-github"></i>
-						<a href="https://github.com/edsonduma" target="_blank"> www.github.com/edsonduma</a>
-					</p>
-					<p><i class="fa fa-linkedin"></i>
-						<a href="https://ao.linkedin.com/in/edson-duma" target="_blank">
-							ao.linkedin.com/in/edson-duma</a>
-					</p>
 					<p><i class="fa fa-file-pdf-o"></i>
-						<a href="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf">baixar Curriculum Vitae PDF</a>
+						<!-- <a href="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf">baixar Curriculum Vitae PDF</a> -->
 					</p>
 				</div>
 			</div>
@@ -201,11 +213,76 @@ http://www.templatemo.com/tm-467-easy-profile
 			</div>
 		</div>
 	</footer>
-	<a href="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf" class="float" target="_blank">
+	<!-- <a href="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf" class="float" target="_blank">
+		<i class="fa fa-download my-float"></i>
+		<p>CV</p>
+	</a> -->
+	<a class="float" data-toggle="modal" data-target"#modal-cv" onclick="mostrarCV(this)">
 		<i class="fa fa-download my-float"></i>
 		<p>CV</p>
 	</a>
 	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+	<div class="modal" id="modal-cv">
+		<div class="container">
+			<div class="modal-body">
+				<div class="card h-100" style="width: 100%; height: 100%;">
+					<div class="modal-header">
+						<button type="button" class="btn-close" onclick="document.getElementById('modal-cv').style.display = 'none'" data-bs-dimiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="card-body">
+						TESTE PDF
+						<!-- <iframe src="/assets/NewCV_EdsonDuma_PT_Agosto22.pdf" frameborder="0"></iframe> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal do cv -->
+	<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#flipFlop">
+		Click Me
+	</button> -->
+
+	<!-- The modal -->
+	<!-- <div class="modal fade" id="modal-cv" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<iframe src="assets/NewCV_EdsonDuma_PT_Agosto22.pdf" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	<div class="d-flex justify-content-center card-footer ">
+		<a class="btn btn-outline-dark" id="verApre"
+		onclick="pdf('assets/NewCV_EdsonDuma_PT_Agosto22.pdf')">Ver
+		apresentação</a>
+	</div>
+	
+    <div class="modal " id="id01">
+        <div class="container">
+            <div class="modal-body">
+                <div class="card h-100" style="width:100%; height: 100% !important;">
+                    <div class="modal-header">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="card-body">
+                        <iframe id="apresentacaoPdf" src="" frameborder="0" width="100%" height="1200px"
+                            style="position: relative">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<!-- javascript js -->
 	<script src="js/jquery.js"></script>
@@ -213,6 +290,13 @@ http://www.templatemo.com/tm-467-easy-profile
 	<script src="js/jquery.backstretch.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/myscript.js"></script>
+    <script>
+        function pdf(srcValue) {
+            // console.log('PDF FILE', srcValue);
+            document.getElementById('apresentacaoPdf').src = srcValue;
+            document.getElementById('id01').style.display = 'block'
+        }
+	</script>
 </body>
 
 </html>
